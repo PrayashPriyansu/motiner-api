@@ -1,0 +1,1 @@
+ALTER TABLE "site_stats" ADD COLUMN "successful_checks" integer DEFAULT 0 NOT NULL;

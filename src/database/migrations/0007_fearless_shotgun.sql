@@ -1,0 +1,1 @@
+ALTER TABLE "site_stats" ADD CONSTRAINT "site_stats_site_id_unique" UNIQUE("site_id");
