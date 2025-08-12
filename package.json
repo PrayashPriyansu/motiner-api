@@ -1,0 +1,35 @@
+{
+  "name": "motiner-api",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/dev.ts",
+    "build": "echo 'Build completed - using JS files directly'",
+    "start": "node dist/index.js",
+    "vercel-build": "echo 'Vercel build completed - using JS serverless function'",
+    "lint": "eslint .",
+    "fix": "pnpm run lint --fix"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.18.1",
+    "@hono/zod-openapi": "^1.1.0",
+    "@neondatabase/serverless": "^1.0.1",
+    "@scalar/hono-api-reference": "^0.9.13",
+    "dotenv": "^17.2.1",
+    "dotenv-expand": "^12.0.2",
+    "drizzle-orm": "^0.44.4",
+    "hono": "^4.9.0",
+    "hono-pino": "^0.10.1",
+    "pino": "^9.8.0",
+    "pino-pretty": "^13.1.1",
+    "vercel": "^44.7.3",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-zod": "^0.8.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
